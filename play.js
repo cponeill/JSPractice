@@ -143,3 +143,10 @@ function female(p) {
 
 console.log(average(ancestry.filter(male).map(age)));
 console.log(average(ancestry.filter(female).map(age)));
+
+var byName = {};
+ancestry.forEach(function(person) {
+    byName[person.name] = person;
+});
+
+console.log(byName["Philibert Haverbeke"]);
