@@ -208,3 +208,7 @@ function binarySearch(A, n) {
 }
 
 console.log(binarySearch(myArray, 7));
+
+var thisArray = [3, 6, 9, 12, 15];
+console.log(thisArray);
+
