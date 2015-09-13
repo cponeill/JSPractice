@@ -175,39 +175,10 @@ console.log(some([2, 3, 4], isNaN));
 // add array here.
 var myArray = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19];
 
-// linear search
-function linearSearch(A, n) {
-    for (var i = 0; i < A.length; i++) {
-        if (A[i] == n) {
-            return i;
-        }
-    }
-}
+// Add linear search algorithm here
 
-console.log(linearSearch(myArray, 11));
 
-// binary search
-function binarySearch(A, n) {
-    var min = 0;
-    var max = A.length - 1;
-    var p;
-    
-    while (max > min) {
-        p = Math.floor((max + min) / 2);
-        for (var i = 0; i < A.length; i++) {
-            if (A[i] == n) {
-                return i;
-            } else if (A[i] < n) {
-                min = i + 1;
-            } else {
-                max = i - 1;
-            }
-        }
-    }
-    return p;
-}
-
-console.log(binarySearch(myArray, 7));
+// Add binary search algorithm here
 
 
 
