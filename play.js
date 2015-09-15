@@ -176,7 +176,14 @@ console.log(some([2, 3, 4], isNaN));
 var myArray = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19];
 
 // Add linear search algorithm here
-
+function linearSearch(A, n) {
+    for (var i = 0; i < A.length; i++) {
+        if (A[i] == n) {
+            return i;
+        }
+    }
+}
+console.log(linearSearch(myArray, 7));
 
 // Add binary search algorithm here
 
