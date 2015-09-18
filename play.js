@@ -186,6 +186,27 @@ function linearSearch(A, n) {
 console.log(linearSearch(myArray, 7));
 
 // Add binary search algorithm here
+function binarySearch(A, n) {
+    var min = 0;
+    var max = A.length - 1;
+    var p;
+    
+    while (max > min) {
+        p = Math.floor((max - min)/2);
+        for (var i = 0; i < A.length; i++) {
+            if (A[i] == n) {
+                return i;
+            } else if (A[i] < n) {
+                min = i + 1;
+            } else{
+                max = i - 1;
+            }
+        }
+    }
+    return p;
+}
+
+console.log(binarySearch(myArray, 5));
 
 
 
