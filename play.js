@@ -208,5 +208,8 @@ function binarySearch(A, n) {
 
 console.log(binarySearch(myArray, 5));
 
+function getThis(c) {
+  console.log(c);
+};
 
-
+getThis("HELLO WORLD!");
