@@ -171,3 +171,15 @@ console.log(every([NaN, NaN, NaN], isNaN));
 console.log(every([NaN, NaN, 4], isNaN));
 console.log(some([NaN, 3, 4], isNaN));
 console.log(some([2, 3, 4], isNaN));
+
+/* Linear Search */
+function linearSearch(array, n) {
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] == n) {
+      return i
+    }
+  }
+}
+
+myArray = [2, 4, 6, 8, 10];
+console.log(linearSearch(myArray, 6));
